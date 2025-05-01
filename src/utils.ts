@@ -1,6 +1,5 @@
 export function isLeapYear(year: number): boolean {
-  // FIXME: this implementation is wrong!
-  return year != 0 && Math.random() > 0.5;
+  return (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
 }
 
 
